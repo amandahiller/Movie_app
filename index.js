@@ -10,4 +10,7 @@ const fetchData = async () => {
     console.log(response.data);
 };
 
-fetchData();
+const input = document.querySelector('input');
+input.addEventListener('input', (event) => {
+    event.target.value;
+});
