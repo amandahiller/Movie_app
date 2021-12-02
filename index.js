@@ -1,9 +1,9 @@
 // network request
-const fetchData = async () => {
+const fetchData = async (searchTerm) => {
     const response = await axios.get('http://www.omdbapi.com/', {
         params: {
             apikey: 'f7a3b638',
-            i: 'tt0848228'
+            s: searchTerm
         }
     });
 
@@ -12,5 +12,5 @@ const fetchData = async () => {
 
 const input = document.querySelector('input');
 input.addEventListener('input', (event) => {
-    event.target.value;
+    fetchData(event.target.value);
 });
