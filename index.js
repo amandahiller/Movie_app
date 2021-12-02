@@ -10,4 +10,4 @@ const fetchData = async () => {
     console.log(response.data);
 };
 
-fetchData;
+fetchData();
