@@ -1,3 +1,4 @@
+// network request
 const fetchData = async () => {
-    const response = await axios.get();
+    const response = await axios.get('http://www.omdbapi.com/');
 };
