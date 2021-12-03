@@ -14,6 +14,14 @@ const input = document.querySelector('input');
 
 const onInput = event => {  
     const movies = fetchData(event.target.value);
-    console.log(movies);
+    
+    for (let movie of movies) {
+        const div = document.createElement('div');
+
+        div.innerHTML = `
+         <img src=${movie.Poster} />
+         <h1>${movie.title}</h1>
+        `;
+    }
 };
 input.addEventListener('input', debounce(onInput, 500));
