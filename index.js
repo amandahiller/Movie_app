@@ -20,7 +20,7 @@ const onInput = event => {
 
         div.innerHTML = `
          <img src=${movie.Poster} />
-         <h1>${movie.title}</h1>
+         <h1>${movie.Title}</h1>
         `;
 
         document.querySelector('#target').appendChild(div);
