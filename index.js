@@ -12,8 +12,8 @@ const fetchData = async (searchTerm) => {
 
 const input = document.querySelector('input');
 
-const onInput = event => {  
-    const movies = fetchData(event.target.value);
+const onInput = async event => {  
+    const movies = await fetchData(event.target.value);
     
     for (let movie of movies) {
         const div = document.createElement('div');
