@@ -13,6 +13,7 @@ const fetchData = async (searchTerm) => {
 const input = document.querySelector('input');
 
 const onInput = event => {  
-    fetchData(event.target.value);
+    const movies = fetchData(event.target.value);
+    console.log(movies);
 };
 input.addEventListener('input', debounce(onInput, 500));
