@@ -31,6 +31,7 @@ const resultsWrapper = document.querySelector('.results');
 const onInput = async event => {  
     const movies = await fetchData(event.target.value);
     
+    dropdown.classList.add('is-active');
     for (let movie of movies) {
         const div = document.createElement('div');
 
@@ -39,7 +40,7 @@ const onInput = async event => {
          <h1>${movie.Title}</h1>
         `;
 
-        document.querySelector('#target').appendChild(div);
+        resultsWrapper.appendChild(div);
     }
 };
 input.addEventListener('input', debounce(onInput, 500));
