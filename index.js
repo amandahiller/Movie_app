@@ -17,7 +17,7 @@ const fetchData = async (searchTerm) => {
 const root = document.querySelector('.autocomplete');
 root.innerHTML = `
   <label><b>Search For a Movie</b></label>
-  <input class="input />
+  <input class="input" />
   <div class="dropdown">
     <div class="dropdown-menu">
         <div class="dropdown-content results"></div>
