@@ -33,14 +33,14 @@ const onInput = async event => {
     
     dropdown.classList.add('is-active');
     for (let movie of movies) {
-        const div = document.createElement('div');
+        const option = document.createElement('a');
 
-        div.innerHTML = `
+        option.innerHTML = `
          <img src=${movie.Poster} />
          <h1>${movie.Title}</h1>
         `;
 
-        resultsWrapper.appendChild(div);
+        resultsWrapper.appendChild(option);
     }
 };
 input.addEventListener('input', debounce(onInput, 500));
