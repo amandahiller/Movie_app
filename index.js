@@ -50,7 +50,7 @@ const onInput = async event => {
         option.addEventListener('click', () => {
           dropdown.classList.remove('is-active');
           input.value = movie.Title;
-          onMovieSelect();
+          onMovieSelect(movie);
         });
 
         resultsWrapper.appendChild(option);
@@ -63,3 +63,7 @@ document.addEventListener('click', event => {
       dropdown.classList.remove('is-active');
   }
 });
+
+const onMovieSelect = (movie) => {
+    console.log(movie);
+}
