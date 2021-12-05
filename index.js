@@ -87,7 +87,7 @@ const movieTemplate = (movieDetail) => {
          <div class="content">
            <h1>${movieDetail.Title}</h1>
            <h4>${movieDetail.Genre}</h4>
-           <p>${movie.Plot}</p>
+           <p>${movieDetail.Plot}</p>
          </div>
         </div>
       </article>
