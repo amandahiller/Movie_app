@@ -1,4 +1,4 @@
-const createAutoComplete = (config) => {
+const createAutoComplete = ({ root }) => {
     const root = document.querySelector('.autocomplete');
     root.innerHTML = `
       <label><b>Search For a Movie</b></label>
