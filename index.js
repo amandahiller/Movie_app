@@ -56,7 +56,7 @@ const onMovieSelect = async (movie, summaryElement, side) => {
     summaryElement.innerHTML = movieTemplate(response.data);
 
     if (side === 'left') {
-      leftMovie = repsonse.data;
+      leftMovie = response.data;
     } else {
       rightMovie = response.data;
     }
