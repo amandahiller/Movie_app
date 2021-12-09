@@ -44,7 +44,7 @@ createAutoComplete({
 });
 
 
-const onMovieSelect = async (movie, summaryElement => {
+const onMovieSelect = async (movie, summaryElement) => {
     const response = await axios.get('http://www.omdbapi.com/', {
         params: {
             apikey: 'f7a3b638',
@@ -53,7 +53,7 @@ const onMovieSelect = async (movie, summaryElement => {
     });
 
     summaryElement.innerHTML = movieTemplate(response.data);
-});
+};
 
 const movieTemplate = (movieDetail) => {
     return `
